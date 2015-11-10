@@ -436,7 +436,7 @@
 		1E5A459A16F0DFC200B55C04 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1E5A459D16F0DFC200B55C04 /* BITStoreUpdateManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BITStoreUpdateManagerTests.m; sourceTree = "<group>"; };
 		1E61CCAE18E0585A00A5E38E /* BITFeedbackManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BITFeedbackManagerTests.m; sourceTree = "<group>"; };
-		1E66CA9115D4100500F35BED /* buildnumber.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = buildnumber.xcconfig; sourceTree = "<group>"; };
+		1E66CA9115D4100500F35BED /* debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = debug.xcconfig; sourceTree = "<group>"; };
 		1E6F0450167B5E5600ED1C86 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/HockeySDK.strings"; sourceTree = "<group>"; };
 		1E70A22F17F2F982001BB32D /* live_report_empty.plcrash */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = live_report_empty.plcrash; sourceTree = "<group>"; };
 		1E70A23017F2F982001BB32D /* live_report_exception.plcrash */ = {isa = PBXFileReference; lastKnownFileType = file; path = live_report_exception.plcrash; sourceTree = "<group>"; };
@@ -691,7 +691,7 @@
 			isa = PBXGroup;
 			children = (
 				1E754DC61621BC170070AB92 /* HockeySDK.xcconfig */,
-				1E66CA9115D4100500F35BED /* buildnumber.xcconfig */,
+				1E66CA9115D4100500F35BED /* debug.xcconfig */,
 				1E45A90E1B78DB0C002CA772 /* release.xcconfig */,
 				1E7DE39619D44DC6009AB8E5 /* crashonly.xcconfig */,
 				1E27E60A1B74F01400192AE2 /* crashonlyextensions.xcconfig */,
@@ -2623,7 +2623,7 @@
 		};
 		E400563C148D79B500EB22B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E66CA9115D4100500F35BED /* buildnumber.xcconfig */;
+			baseConfigurationReference = 1E66CA9115D4100500F35BED /* debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ENABLE_OBJC_ARC = YES;

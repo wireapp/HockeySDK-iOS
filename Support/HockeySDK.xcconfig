@@ -1,4 +1,13 @@
 OTHER_LDFLAGS=$(inherited) -framework CoreText -framework CoreGraphics -framework Foundation -framework QuartzCore -framework SystemConfiguration -framework UIKit -framework Security -framework AssetsLibrary -framework MobileCoreServices -framework QuickLook -lc++
+
+BUILD_NUMBER = 62
+VERSION_STRING = 3.8.6
+BIT_ARM_ARCHS = armv7 armv7s arm64
+BIT_SIM_ARCHS = x86_64 i386
+ARCHS = $(BIT_ARM_ARCHS)
+VALID_ARCHS = $(BIT_ARM_ARCHS)
+
+HOCKEYSDK_METAINFO=BITHOCKEY_VERSION="@\""$(VERSION_STRING)"\"" BITHOCKEY_BUILD="@\""$(BUILD_NUMBER)"\"" BITHOCKEY_C_VERSION="\""$(VERSION_STRING)"\"" BITHOCKEY_C_BUILD="\""$(BUILD_NUMBER)"\""
 HOCKEYSDK_DOCSET_NAME=HockeySDK-iOS
-HOCKEYSDK_GCC_PREPROCESSOR_DEFINITIONS=$(inherited) $(XCODEBUILD_GCC_PREPROCESSOR_DEFINITIONS)
+HOCKEYSDK_GCC_PREPROCESSOR_DEFINITIONS=$(inherited) $(XCODEBUILD_GCC_PREPROCESSOR_DEFINITIONS) $(HOCKEYSDK_METAINFO)
 HOCKEYSDK_WARNING_FLAGS = -Wshorten-64-to-32 -Wall
