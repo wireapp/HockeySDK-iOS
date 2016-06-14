@@ -36,7 +36,7 @@ script:
   - COMMAND+=" | tee xcodebuild.log"
 
   # Add xcpretty
-  - COMMAND+=" | xcpretty -f `xcpretty-travis-formatter`"
+  - COMMAND+=" 2>&1 >/dev/null"
 
   - echo $COMMAND
   - eval $COMMAND && rm xcodebuild.log
